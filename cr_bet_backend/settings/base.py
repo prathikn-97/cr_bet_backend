@@ -12,7 +12,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
-    'corsheaders',
+    # 'corsheaders',
     'rest_framework',
     'rest_framework_simplejwt',
     'user.apps.UserConfig',
@@ -145,7 +145,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 REST_AUTH_TOKEN_MODEL = None
 
-REDIS_URL = config("REDIS_URL")
+REDIS_URL = config("REDIS_URL", "localhost:6379")
 CELERY_BROKER_URL = REDIS_URL
 CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_RESULT_SERIALIZER = 'json'

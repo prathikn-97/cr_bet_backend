@@ -15,9 +15,9 @@ DATABASES = {
         'PASSWORD': config('DB_PASSWORD', 'Admin@5678'),
         'HOST': config('DB_INSTANCE_HOST', 'localhost'),
         'PORT': config('DB_PORT', 5432),
-        'OPTIONS': {
-            'sql_mode': 'STRICT_TRANS_TABLES',
-        },
+        # 'OPTIONS': {
+        #     'sql_mode': 'STRICT_TRANS_TABLES',
+        # },
     }
 }
 

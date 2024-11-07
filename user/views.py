@@ -18,7 +18,6 @@ from . import serializers
 from . import signals
 from cr_bet_backend.base.auth import BaseViewSet, AppBaseViewSet
 from cr_bet_backend.base.auth.baseViewSet import CustomResultsSetPagination
-import stripe
 import requests
 
 User = get_user_model()
