@@ -27,7 +27,7 @@ class SystemError:
                     print(json.dumps({cls.__dict__}, indent=2),)
                 except Exception as error:
                     print(error)
-                    pprint.pprint({"extra": cls.__dict__}, indent=2)
+                    print.pprint({"extra": cls.__dict__}, indent=2)
             else:
                 print({"extra": extra})
 

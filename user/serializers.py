@@ -3,6 +3,7 @@ from datetime import timedelta
 
 from django.contrib.auth import get_user_model
 from django.contrib.auth.hashers import check_password
+from rest_framework import exceptions
 from django.core.exceptions import ValidationError
 from django.db import transaction
 from django.shortcuts import get_object_or_404 as _get_object_or_404
